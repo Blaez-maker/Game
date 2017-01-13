@@ -3,6 +3,8 @@ package game;
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
+
+
 public class Game {
 
 
@@ -30,7 +32,6 @@ public class Game {
                 break;
             case 3:
                 choice = 3;
-                System.out.println("You chose to go to the western path. You walk for 20 minutes and notice it getting very humid and moist. You almost slip and fall on what appears to be a tongue. You notice very sharp fangs lining the ceiling and floor... when you try to go back the dragon shuts it's mouth. Ded.");
                 break;
             case 4:
                 choice = 4;
@@ -39,6 +40,13 @@ public class Game {
             default:
                 System.out.println("Ded");
 
+        }
+        
+        if(choice == 3){
+            System.out.println();
+            Room myRoom = new Room(choice);
+            
+            
         }
     }
 
